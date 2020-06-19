@@ -1,0 +1,108 @@
+* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-sizing: content-box;
+    padding: 50;
+    margin: 50;
+    width: initial;
+}
+main {
+    background-color: #fbfcff;
+    overflow: auto;
+    padding: 15px 0px;
+}
+body {
+    text-align: center;
+    background-color: beige;
+    border: 5px solid #f5f0f0;
+    margin: 10px;
+}
+.plannerHead {
+    font-size: 40px;
+}
+.timerPar {
+    font-size: 20px;
+    line-height: 26px;
+}
+.header {
+    background-color: #e6cb82;
+    color: rgb(12, 12, 12);
+    padding: 45px;
+}
+.calendarBlock {
+    display: flex;
+    flex-direction: row;
+    padding: 25px;
+    background-color: beige;
+}
+.timeBlock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(246, 250, 252);
+    background-color: #eb9839;
+    padding: 25px;
+    font-size: 20px;
+    width: 12%;
+    min-width: 105px;
+}
+.activityForm {
+    display: flex;
+    width: 100%;
+}
+.activitiesBlock {
+    width: 90%;
+    height: 100px;
+    padding: 5px 15px;
+}
+.now {
+    background-color: #9ef09e;
+}
+.past {
+    background-color: #e96d80;
+    color: rgb(8, 8, 8);
+}
+.saveBlock {
+    display: flex;
+    width: 10%;
+    cursor: pointer;
+}
+.saveBlock img {
+    width: 100%;
+    max-width: 50px;
+    margin: auto;
+}
+
+@media screen and (max-width: 767px) {
+    .header {
+            padding: 15px;
+    }
+    .plannerHead {
+            font-size: 30px;
+            line-height: 30px;
+            margin-bottom: 10px;
+    }
+    .timerPar {
+            font-size: 26px;
+            line-height: 20px;
+        }
+    .calendarBlock {
+            flex-direction: column;
+    }
+    .activityForm {
+            flex-direction: column;
+    }
+    .timeBlock {
+            padding: 5px;
+            width: 100%;
+    }
+    .activitiesBlock {
+            width: 100%;
+    }
+    .saveBlock {
+            width: 100%;
+            padding: 5px;
+    }
+    .saveBlock img {
+            max-width: 35px;
+    }
+}
